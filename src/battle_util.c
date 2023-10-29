@@ -6239,7 +6239,7 @@ u32 IsAbilityPreventingEscape(u32 battler)
     if (IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
         return 0;
 #endif
-    if (GetBattlerAbility(gActiveBattler) == ABILITY_RUN_AWAY)
+    if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
         return 0;
 #if B_SHADOW_TAG_ESCAPE >= GEN_4
     if ((id = IsAbilityOnOpposingSide(battler, ABILITY_SHADOW_TAG)) && GetBattlerAbility(battler) != ABILITY_SHADOW_TAG)

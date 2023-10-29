@@ -393,9 +393,9 @@ static void HandleInputChooseAction(u32 battler)
             if(!(gBattleTypeFlags & BATTLE_TYPE_TRAINER)) //if wild, pressing B moves cursor to run
             {
                 PlaySE(SE_SELECT);
-                ActionSelectionDestroyCursorAt(gActionSelectionCursor[gActiveBattler]);
-                gActionSelectionCursor[gActiveBattler] = 3;
-                ActionSelectionCreateCursorAt(gActionSelectionCursor[gActiveBattler], 0);
+                ActionSelectionDestroyCursorAt(gActionSelectionCursor[battler]);
+                gActionSelectionCursor[battler] = 3;
+                ActionSelectionCreateCursorAt(gActionSelectionCursor[battler], 0);
             }
         }
     }
