@@ -123,10 +123,17 @@ static bool8 CheckFeebas(void)
     s16 x, y;
     u8 route119Section = 0;
     u16 spotId;
+    bool8 feebasCatchAllTiles = TRUE;
 
     if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE119)
      && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE119))
     {
+        if(feebasCatchAllTiles){
+           if(Random() % 100 > 4)
+               return TRUE;
+           else
+               return FALSE;
+        }
         GetXYCoordsOneStepInFrontOfPlayer(&x, &y);
         x -= MAP_OFFSET;
         y -= MAP_OFFSET;
@@ -369,11 +376,16 @@ static u16 GetCurrentMapWildMonHeaderId(void)
             if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ALTERING_CAVE) &&
                 gSaveBlock1Ptr->location.mapNum == MAP_NUM(ALTERING_CAVE))
             {
+                /*
                 u16 alteringCaveId = VarGet(VAR_ALTERING_CAVE_WILD_SET);
                 if (alteringCaveId >= NUM_ALTERING_CAVE_TABLES)
                     alteringCaveId = 0;
 
                 i += alteringCaveId;
+                */
+               
+               u16 alteringCaveId = Random() % 9;
+               i += alteringCaveId;
             }
 
             return i;

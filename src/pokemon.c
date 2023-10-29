@@ -3536,19 +3536,25 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         value = Random();
 
         iv = value & MAX_IV_MASK;
+        if(iv < 10) iv = 10;
         SetBoxMonData(boxMon, MON_DATA_HP_IV, &iv);
         iv = (value & (MAX_IV_MASK << 5)) >> 5;
+        if(iv < 10) iv = 10;
         SetBoxMonData(boxMon, MON_DATA_ATK_IV, &iv);
         iv = (value & (MAX_IV_MASK << 10)) >> 10;
+        if(iv < 10) iv = 10;
         SetBoxMonData(boxMon, MON_DATA_DEF_IV, &iv);
 
         value = Random();
 
         iv = value & MAX_IV_MASK;
+        if(iv < 10) iv = 10;
         SetBoxMonData(boxMon, MON_DATA_SPEED_IV, &iv);
         iv = (value & (MAX_IV_MASK << 5)) >> 5;
+        if(iv < 10) iv = 10;
         SetBoxMonData(boxMon, MON_DATA_SPATK_IV, &iv);
         iv = (value & (MAX_IV_MASK << 10)) >> 10;
+        if(iv < 10) iv = 10;
         SetBoxMonData(boxMon, MON_DATA_SPDEF_IV, &iv);
 
         if (gSpeciesInfo[species].flags & SPECIES_FLAG_ALL_PERFECT_IVS)

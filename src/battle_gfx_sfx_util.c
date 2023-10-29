@@ -1007,7 +1007,7 @@ void ClearBehindSubstituteBit(u8 battler)
 
 void HandleLowHpMusicChange(struct Pokemon *mon, u8 battler)
 {
-    u16 hp = GetMonData(mon, MON_DATA_HP);
+    /**u16 hp = GetMonData(mon, MON_DATA_HP);
     u16 maxHP = GetMonData(mon, MON_DATA_MAX_HP);
 
     if (GetHPBarLevel(hp, maxHP) == HP_BAR_RED)
@@ -1033,6 +1033,8 @@ void HandleLowHpMusicChange(struct Pokemon *mon, u8 battler)
             return;
         }
     }
+    **/
+    return;
 }
 
 void BattleStopLowHpSound(void)
