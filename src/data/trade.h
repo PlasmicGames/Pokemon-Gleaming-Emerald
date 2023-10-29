@@ -984,21 +984,21 @@ static const union AffineAnimCmd *const sAffineAnims_CrossingMonPics[] =
 
 static const struct InGameTrade sIngameTrades[] =
 {
-    [INGAME_TRADE_SEEDOT] =
+    [INGAME_TRADE_AGEODUDE] =
     {
-        .nickname = _("DOTS"),
-        .species = SPECIES_SEEDOT,
-        .ivs = {5, 4, 5, 4, 4, 4},
+        .nickname = _("FERRUS"),
+        .species = SPECIES_GEODUDE_ALOLAN,
+        .ivs = {15, 25, 15, 15, 15, 10},
         .abilityNum = 1,
         .otId = 38726,
         .conditions = {30, 5, 5, 5, 5},
         .personality = 0x84,
-        .heldItem = ITEM_CHESTO_BERRY,
+        .heldItem = ITEM_CELL_BATTERY,
         .mailNum = -1,
         .otName = _("KOBE"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_RALTS
+        .requestedSpecies = SPECIES_GEODUDE
     },
     [INGAME_TRADE_PLUSLE] =
     {
@@ -1047,6 +1047,102 @@ static const struct InGameTrade sIngameTrades[] =
         .otGender = FEMALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_SKITTY
+    },
+    [INGAME_TRADE_ASANDSHREW] =
+    {
+        .nickname = _("CHILLO"),
+        .species = SPECIES_SANDSHREW_ALOLAN,
+        .ivs = {20, 20, 20, 10, 10, 15},
+        .abilityNum = 0,
+        .otId = 38726,
+        .conditions = {30, 5, 5, 5, 5},
+        .personality = 0x84,
+        .heldItem = ITEM_GRIP_CLAW,
+        .mailNum = -1,
+        .otName = _("HAROLD"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_SANDSHREW
+    },
+    [INGAME_TRADE_AVULPIX] =
+    {
+        .nickname = _("VELVET"),
+        .species = SPECIES_VULPIX_ALOLAN,
+        .ivs = {10, 10, 10, 25, 15, 25},
+        .abilityNum = 0,
+        .otId = 38726,
+        .conditions = {30, 5, 5, 5, 5},
+        .personality = 0x84,
+        .heldItem = ITEM_SNOWBALL,
+        .mailNum = -1,
+        .otName = _("GINA"),
+        .otGender = FEMALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_VULPIX
+    },
+    [INGAME_TRADE_AGRIMER] =
+    {
+        .nickname = _("SKITTLES"),
+        .species = SPECIES_GRIMER_ALOLAN,
+        .ivs = {20, 25, 10, 10, 20, 10},
+        .abilityNum = 0,
+        .otId = 38726,
+        .conditions = {30, 5, 5, 5, 5},
+        .personality = 0x84,
+        .heldItem = ITEM_BLACK_SLUDGE,
+        .mailNum = -1,
+        .otName = _("MAIA"),
+        .otGender = FEMALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_GRIMER
+    },
+    [INGAME_TRADE_GWEEZING] =
+    {
+        .nickname = _("REGINALD"),
+        .species = SPECIES_WEEZING_GALARIAN,
+        .ivs = {20, 15, 25, 15, 25, 10},
+        .abilityNum = 0,
+        .otId = 38726,
+        .conditions = {30, 5, 5, 5, 5},
+        .personality = 0x84,
+        .heldItem = ITEM_SMOKE_BALL,
+        .mailNum = -1,
+        .otName = _("EUGENE"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_WEEZING
+    },
+    [INGAME_TRADE_GCORSOLA] =
+    {
+        .nickname = _("BLANCA"),
+        .species = SPECIES_CORSOLA_GALARIAN,
+        .ivs = {20, 15, 10, 30, 25, 10},
+        .abilityNum = 2,
+        .otId = 38726,
+        .conditions = {30, 5, 5, 5, 5},
+        .personality = 0x84,
+        .heldItem = ITEM_SPELL_TAG,
+        .mailNum = -1,
+        .otName = _("LEA"),
+        .otGender = FEMALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_CORSOLA
+    },
+    [INGAME_TRADE_GZIGZAGOON] =
+    {
+        .nickname = _("GENE"),
+        .species = SPECIES_ZIGZAGOON_GALARIAN,
+        .ivs = {10, 20, 10, 10, 10, 25},
+        .abilityNum = 1,
+        .otId = 38726,
+        .conditions = {30, 5, 5, 5, 5},
+        .personality = 0x84,
+        .heldItem = ITEM_SMOKE_BALL,
+        .mailNum = -1,
+        .otName = _("PAUL"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_ZIGZAGOON
     }
 };
 
