@@ -15999,10 +15999,9 @@ u8 GetFirstFaintedPartyIndex(u8 battler)
 
 void ApplyExperienceMultipliers(s32 *expAmount, u8 expGetterMonId, u8 faintedBattler)
 {
-    double expMultiplier = GetPkmnExpMultiplier(expGetterMonId.level);
-    *expAmount = *expAmount * expMultiplier;
-
     u32 holdEffect = GetMonHoldEffect(&gPlayerParty[expGetterMonId]);
+
+    *expAmount = *expAmount * GetPkmnExpMultiplier((int)&gPlayerParty[expGetterMonId].level);
 
     if (IsTradedMon(&gPlayerParty[expGetterMonId]))
         *expAmount = (*expAmount * 150) / 100;
