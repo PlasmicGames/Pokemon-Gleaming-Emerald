@@ -282,7 +282,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route116_EventScript_ItemXSpecial",
+      "script": "Route116_EventScript_ItemPersimBerry",
       "flag": "FLAG_ITEM_ROUTE_116_X_SPECIAL"
     },
     {

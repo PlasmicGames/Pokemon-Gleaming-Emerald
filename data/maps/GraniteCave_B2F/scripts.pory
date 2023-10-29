@@ -1,0 +1,29 @@
+raw `
+GraniteCave_B2F_MapScripts::
+	.byte 0
+`
+
+script GraniteCave_B2F_EventScript_Will{
+    trainerbattle_single(TRAINER_WILL, Will_Intro, Will_Outro)
+    msgbox(PostBattle_Will, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+text Will_Intro{
+    "I caught a glimpse of a creature\n"
+    "with an enormous mouth!\p"
+    "But its body was tiny, I wonder\n"
+    "what it was?"
+}
+
+text Will_Outro{
+    "Whatever it was, it probably would\n"
+    "have trounced me!"
+}
+
+text PostBattle_Will{
+    "I still want to find that big\n"
+    "mouthed creature once more.\p"
+    "I'm sure I'll find it again!"
+}

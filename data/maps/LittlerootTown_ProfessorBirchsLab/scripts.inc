@@ -339,7 +339,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_TakeYourTime::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveCyndaquil::
 	bufferspeciesname STR_VAR_1, SPECIES_CYNDAQUIL
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CYNDAQUIL
+	setvar VAR_TEMP_1, SPECIES_CYNDAQUIL
 	givemon SPECIES_CYNDAQUIL, 5
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, LittlerootTown_ProfessorBirchsLab_EventScript_SendCyndaquilToParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, LittlerootTown_ProfessorBirchsLab_EventScript_SendCyndaquilToPC
@@ -380,7 +380,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedCyndaquil::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveTotodile::
 	bufferspeciesname STR_VAR_1, SPECIES_TOTODILE
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TOTODILE
+	setvar VAR_TEMP_1, SPECIES_TOTODILE
 	givemon SPECIES_TOTODILE, 5
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, LittlerootTown_ProfessorBirchsLab_EventScript_SendTotodileToParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, LittlerootTown_ProfessorBirchsLab_EventScript_SendTotodileToPC
@@ -421,7 +421,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedTotodile::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveChikorita::
 	bufferspeciesname STR_VAR_1, SPECIES_CHIKORITA
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CHIKORITA
+	setvar VAR_TEMP_1, SPECIES_CHIKORITA
 	givemon SPECIES_CHIKORITA, 5
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, LittlerootTown_ProfessorBirchsLab_EventScript_SendChikoritaToParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, LittlerootTown_ProfessorBirchsLab_EventScript_SendChikoritaToPC
@@ -999,3 +999,77 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "we meet. I'll be waiting!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Challenge::
+	message LittlerootTown_ProfessorBirchsLab_Text_Challenge
+	waitmessage
+	switch VAR_DIFFICULTY
+	case 0, LittlerootTown_ProfessorBirchsLab_EventScript_DefaultNormal
+	case 1, LittlerootTown_ProfessorBirchsLab_EventScript_DefaultHard
+	case 2, LittlerootTown_ProfessorBirchsLab_EventScript_DiffInfo
+
+LittlerootTown_ProfessorBirchsLab_EventScript_DefaultNormal:
+	multichoicedefault 21, 6, MULTI_TAG_DIFFICULTY, 0, FALSE
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChallengeSelect
+
+LittlerootTown_ProfessorBirchsLab_EventScript_DefaultHard:
+	multichoicedefault 21, 6, MULTI_TAG_DIFFICULTY, 1, FALSE
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChallengeSelect
+
+LittlerootTown_ProfessorBirchsLab_EventScript_DiffInfo:
+	multichoicedefault 21, 6, MULTI_TAG_DIFFICULTY, 2, FALSE
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChallengeSelect
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChallengeSelect:
+	switch VAR_RESULT
+	case 0, LittlerootTown_ProfessorBirchsLab_EventScript_SelectedNormal
+	case 1, LittlerootTown_ProfessorBirchsLab_EventScript_SelectedHard
+	case 2, LittlerootTown_ProfessorBirchsLab_EventScript_SelectedInfo
+	case MULTI_B_PRESSED, LittlerootTown_ProfessorBirchsLab_EventScript_SelectedCancel
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_SelectedNormal:
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_SelectedNormal, MSGBOX_DEFAULT
+	setvar VAR_DIFFICULTY, 0
+	clearflag FLAG_HARDMODE_BAG_DISABLE
+	closemessage
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_SelectedHard:
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_SelectedHard, MSGBOX_DEFAULT
+	setvar VAR_DIFFICULTY, 1
+	setflag FLAG_HARDMODE_BAG_DISABLE
+	closemessage
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_SelectedInfo:
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_SelectedInfo, MSGBOX_DEFAULT
+	closemessage
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_Challenge
+
+LittlerootTown_ProfessorBirchsLab_EventScript_SelectedCancel:
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_SelectedCancel, MSGBOX_DEFAULT
+	closemessage
+	end
+
+LittlerootTown_ProfessorBirchsLab_Text_Challenge:
+	.string "What difficulty would\n"
+	.string "you like to play at?$"
+
+LittlerootTown_ProfessorBirchsLab_Text_SelectedNormal:
+	.string "Normal difficulty\n"
+	.string "was chosen.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_SelectedHard:
+	.string "Hard difficulty\n"
+	.string "was chosen.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_SelectedInfo:
+	.string "Hard Mode will scale trainers'\n"
+	.string "pokemon based on badge count.\p"
+	.string "Hard Mode also disables the\n"
+	.string "item bag in trainer battles.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_SelectedCancel:
+	.string "Difficulty is\n"
+	.string "unchanged.$"
