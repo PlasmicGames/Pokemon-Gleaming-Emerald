@@ -1,0 +1,56 @@
+Features:
+- Battle Engine Upgrades (up to gen 8 mechanics)
+- Learnset Updates (up to gen 8)
+- Modern Items (not available to player just yet)
+- Reusable TMs (not tested yet)
+
+- Gen 6 style EXP Share (still a held item, but distributes to all mons) : Voloved
+- Difficulty Modes (set at the left PC in Birch's lab) : Voloved
+	- No bag use on Hard : ghoulslash
+- Send new items to PC if bag is full : Voloved
+- Faster battles (faint animation, HP drain, EXP gain) : Mkol103
+- Faster PokeCenters (no confirmation box) : Alonso
+- View IVs/EVs (hold L or R on the party stats screen) : PokemonCrazy
+- Show Natures (stat in red is buffed, stat in blue is nerfed) : PokemonCrazy
+- No low health beeps : Mkol103
+- Hidden Power Type Display (in the summary screen) : Jirachii
+- Press B in wild battles to hover over Run : Voloved
+- Return/Frustration damage display : Lunos
+- Change clock after setting it (Press R when interacting with the clock) : Paccy
+- Faster Berry Interactions (less text) : dunsparce9
+- Unable to register non-usable key items : Voloved
+- Feebas catchable on all tiles in Route 119 : Voloved
+- Toggled Running : Voloved
+- Level Soft Caps : PokemonCrazy
+- No Walley Tutorial
+- New Altering Cave
+- Forget any move
+- Rename pokemon from the party screen, including traded mons: LOuroboros
+- Consumables from battles aren't removed post-battle, beyond berries
+- Move relearning in the party menu : Diego Mertens
+- Nickname Pokemon from the Menu
+- Wild catches have better IVs (10 minimum in any stat)
+
+
+To Add:
+- Add Hard mode as a PC option
+- Change Trainer Parties on Difficulty : TheSylphIsIn
+- Hyper Training : Lunos
+- IV increasing & wiping options
+- Fix Nature Mints
+- Replace HMs with HM Items
+- New Rival Encounters
+- New areas to encounter pokemon
+- NPC to learn an egg move
+- Move compatability from TM case
+- Item Bag Sorting
+- View Pokemon Happiness and Egg Hatch steps
+- Giga Impact/Hyper Beam won't recharge on a KO
+- Ability Capsules to swap abilities
+
+
+Possible Adds:
+- Pokevial (full party healing item that has set charges, can be restored at a center)
+- Mega Evolutions
+- Slightly expanded regional dex
+- Hidden Cheat Codes
