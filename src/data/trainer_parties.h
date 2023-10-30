@@ -11804,3 +11804,27 @@ static const struct TrainerMon sParty_MayLinkPlaceholder[] = {
     .species = SPECIES_KYOGRE,
     }
 };
+
+static const struct TrainerMon sParty_Will[] = {
+    {
+    .iv = 120,
+    .lvl = 15,
+    .species = SPECIES_GEODUDE,
+    .ability = ABILITY_STURDY,
+    .moves = {MOVE_MAGNITUDE, MOVE_DEFENSE_CURL, MOVE_ROLLOUT, MOVE_STEALTH_ROCK},
+    },
+    {
+    .iv = 120,
+    .lvl = 16,
+    .species = SPECIES_BEAUTIFLY,
+    .ability = ABILITY_SWARM,
+    .moves = {MOVE_GUST, MOVE_ABSORB, MOVE_STUN_SPORE, MOVE_BUG_BITE},
+    },
+    {
+    .iv = 140,
+    .lvl = 16,
+    .species = SPECIES_MAKUHITA,
+    .ability = ABILITY_GUTS,
+    .moves = {MOVE_FOCUS_ENERGY, MOVE_FORCE_PALM, MOVE_WHIRLWIND, MOVE_ROCK_TOMB},
+    },
+};
