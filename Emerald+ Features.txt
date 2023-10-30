@@ -1,14 +1,12 @@
 Features:
-- Battle Engine Upgrades (up to gen 8 mechanics)
-- Learnset Updates (up to gen 8)
-- Modern Items (not available to player just yet)
-- Reusable TMs (not tested yet)
-
-- Gen 6 style EXP Share (still a held item, but distributes to all mons) : Voloved
+- Battle Engine Upgrades
+- Learnset Updates
+- Modern Items
+- Reusable TMs
+- Gen 6 style EXP Share
 - Difficulty Modes (set at the left PC in Birch's lab) : Voloved
 	- No bag use on Hard : ghoulslash
 - Send new items to PC if bag is full : Voloved
-- Faster battles (faint animation, HP drain, EXP gain) : Mkol103
 - Faster PokeCenters (no confirmation box) : Alonso
 - View IVs/EVs (hold L or R on the party stats screen) : PokemonCrazy
 - Show Natures (stat in red is buffed, stat in blue is nerfed) : PokemonCrazy
