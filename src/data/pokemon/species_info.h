@@ -7820,11 +7820,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_SABLEYE] =
     {
-        .baseHP        = 50,
+        .baseHP        = 55,
         .baseAttack    = 85,
         .baseDefense   = 85,
         .baseSpeed     = 40,
-        .baseSpAttack  = 65,
+        .baseSpAttack  = 75,
         .baseSpDefense = 75,
         .types = { TYPE_DARK, TYPE_GHOST},
         .catchRate = 45,
@@ -7835,7 +7835,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 25,
         .friendship = 35,
-        .growthRate = GROWTH_MEDIUM_SLOW,
+        .growthRate = GROWTH_FAST,
         .eggGroups = { EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE},
         .abilities = {ABILITY_KEEN_EYE, ABILITY_PRANKSTER, ABILITY_SHADOW_TAG},
         .bodyColor = BODY_COLOR_PURPLE,
@@ -7844,10 +7844,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_MAWILE] =
     {
-        .baseHP        = 50,
+        .baseHP        = 55,
         .baseAttack    = 95,
-        .baseDefense   = 105,
-        .baseSpeed     = 50,
+        .baseDefense   = 110,
+        .baseSpeed     = 55,
         .baseSpAttack  = 45,
         .baseSpDefense = 55,
         #if P_UPDATED_TYPES >= GEN_6
