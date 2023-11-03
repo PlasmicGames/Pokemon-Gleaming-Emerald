@@ -949,8 +949,8 @@ static const u8 sMetalClawDescription[] = _(
     "raise the user's Attack.");
 
 static const u8 sVitalThrowDescription[] = _(
-    "Makes the user's move last,\n"
-    "but it never misses.");
+    "Aims for the foe's vitals,\n"
+    "but it usually moves last.");
 
 static const u8 sMorningSunDescription[] = _(
     "Restores HP. The amount\n"
@@ -1390,7 +1390,7 @@ static const u8 sMudShotDescription[] = _(
 
 static const u8 sPoisonTailDescription[] = _(
     "Has a high critical-hit\n"
-    "ratio. May also poison.");
+    "ratio. May badly poison.");
 
 static const u8 sCovetDescription[] = _(
     "Cutely begs to obtain an\n"
@@ -2090,7 +2090,7 @@ static const u8 sElectrowebDescription[] = _(
 
 static const u8 sWildChargeDescription[] = _(
     "An electrical tackle that\n"
-    "also hurts the user.");
+    "may cause paralysis.");
 
 static const u8 sDrillRunDescription[] = _(
     "Spins its body like a drill.\n"
@@ -2482,7 +2482,7 @@ static const u8 sSpotlightDescription[] = _(
 
 static const u8 sToxicThreadDescription[] = _(
     "Attacks with a thread that\n"
-    "poisons and drops Speed.");
+    "badly poisons and drops Speed.");
 
 static const u8 sLaserFocusDescription[] = _(
     "Guarantees the next move\n"
@@ -3259,6 +3259,14 @@ static const u8 sPsybladeDescription[] = _(
 static const u8 sHydroSteamDescription[] = _(
     "This move's power increases\n"
     "under harsh sunlight.");
+
+static const u8 sChillingAirDescription[] = _(
+    "Uses freezing air to inflict\n"
+    "frostbite on foes.");
+
+static const u8 sSnuggleDescription[] = _(
+    "Overly snuggles the foe.\n"
+    "May lower foe's ATK.");
 
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
@@ -4099,4 +4107,6 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_MAGICAL_TORQUE - 1] = sMagicalTorqueDescription,
     [MOVE_PSYBLADE - 1] = sPsybladeDescription,
     [MOVE_HYDRO_STEAM - 1] = sHydroSteamDescription,
+    [MOVE_CHILLING_AIR - 1] = sChillingAirDescription,
+    [MOVE_SNUGGLE - 1] = sSnuggleDescription,
 };

@@ -604,6 +604,7 @@ SlateportCity_Pokemart_Mints:
 	.2byte ITEM_RELAXED_MINT
 	.2byte ITEM_SASSY_MINT
 	.2byte ITEM_TIMID_MINT
+	.2byte ITEM_NONE
 	release
 	end
 
@@ -625,6 +626,7 @@ SlateportCity_Pokemart_Feathers:
 	.2byte ITEM_GENIUS_FEATHER
 	.2byte ITEM_CLEVER_FEATHER
 	.2byte ITEM_SWIFT_FEATHER
+	.2byte ITEM_NONE
 	release
 	end
 
