@@ -623,9 +623,9 @@ const u16 sLevelCaps[NUM_SOFT_CAPS] = { 15, 20, 25, 30, 35, 40, 45, 50 };
 const double sLevelCapReduction[7] = { .5, .33, .25, .20, .15, .10, .05 };
 const double sRelativePartyScaling[27] =
 {
-    3.00, 2.75, 2.50, 2.20, 2.00,
-    1.80, 1.60, 1.50, 1.40, 1.30,
-    1.20, 1.15, 1.10, 1.05, 1.00,
+    3.00, 2.75, 2.50, 2.33, 2.25,
+    2.00, 1.80, 1.70, 1.60, 1.50,
+    1.40, 1.30, 1.20, 1.10, 1.00,
     0.90, 0.80, 0.75, 0.66, 0.50,
     0.40, 0.33, 0.25, 0.20, 0.15,
     0.10, 0.05,
@@ -4271,8 +4271,11 @@ static void Cmd_getexp(void)
 
                 if (IsValidForBattle(&gPlayerParty[*expMonId]))
                 {
+                    // gets exp mult for valid pkmn
+                    double expMultiplier = GetPkmnExpMultiplier(GetMonData(&gPlayerParty[*expMonId], MON_DATA_LEVEL));
+
                     if (wasSentOut)
-                        gBattleMoveDamage = gBattleStruct->expValue;
+                        gBattleMoveDamage = gBattleStruct->expValue * expMultiplier;
                     else
                         gBattleMoveDamage = 0;
 
@@ -4283,7 +4286,7 @@ static void Cmd_getexp(void)
 #endif
                        )
                     {
-                        gBattleMoveDamage += gBattleStruct->expShareExpValue;
+                        gBattleMoveDamage += gBattleStruct->expShareExpValue * expMultiplier;
                     }
 
                     ApplyExperienceMultipliers(&gBattleMoveDamage, *expMonId, gBattlerFainted);
@@ -16002,8 +16005,6 @@ u8 GetFirstFaintedPartyIndex(u8 battler)
 void ApplyExperienceMultipliers(s32 *expAmount, u8 expGetterMonId, u8 faintedBattler)
 {
     u32 holdEffect = GetMonHoldEffect(&gPlayerParty[expGetterMonId]);
-
-    *expAmount = *expAmount * GetPkmnExpMultiplier((int)&gPlayerParty[expGetterMonId].level);
 
     if (IsTradedMon(&gPlayerParty[expGetterMonId]))
         *expAmount = (*expAmount * 150) / 100;
