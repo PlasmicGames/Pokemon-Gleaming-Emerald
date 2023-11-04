@@ -3378,7 +3378,7 @@ static const struct TrainerMon sParty_Brawly1[] = {
     .heldItem = ITEM_LEFTOVERS,
     .ability = ABILITY_PRANKSTER,
     .nature = TRAINER_PARTY_NATURE(NATURE_SASSY),
-    .moves = {MOVE_CONFUSE_RAY, MOVE_DISABLE, MOVE_WILL_O_WISP, MOVE_SHADOW_BALL}
+    .moves = {MOVE_CONFUSE_RAY, MOVE_DISABLE, MOVE_WILL_O_WISP, MOVE_SHADOW_SNEAK}
     },
     {
     .lvl = 20,
