@@ -245,11 +245,11 @@ static const struct TrainerMon sParty_GruntMuseum2[] = {
     .moves = {MOVE_SUPERSONIC, MOVE_POISON_FANG, MOVE_ABSORB, MOVE_AERIAL_ACE},
     },
     {
-    .iv = 120,
+    .iv = 180,
     .lvl = 18,
     .species = SPECIES_MIGHTYENA,
     .ability = ABILITY_MOXIE,
-    .heldItem = ITEM_SITRUS_BERRY,
+    .heldItem = ITEM_MUSCLE_BAND,
     .moves = {MOVE_BITE, MOVE_ICE_FANG, MOVE_FIRE_FANG, MOVE_THUNDER_FANG}
     }
 };

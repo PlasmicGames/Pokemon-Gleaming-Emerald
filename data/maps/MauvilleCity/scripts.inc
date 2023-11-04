@@ -478,11 +478,13 @@ MauvilleCity_Text_UncleYourePushingIt:
 	.string "Since you started living with POKéMON,\n"
 	.string "you have grown quite a lot stronger.\p"
 	.string "But don't you think you're pushing it\n"
-	.string "to suddenly challenge a GYM?$"
+	.string "to skip all the way to this GYM?\p"
+	.string "Most people to go to the Dewford Gym\n"
+	.string "After Rustboro's Gym.$"
 
 MauvilleCity_Text_WallyWeCanBeatAnyone:
 	.string "WALLY: I'm not pushing it.\p"
-	.string "If I combine forces with RALTS,\n"
+	.string "With my new party of POKéMON,\n"
 	.string "we can beat anyone!$"
 
 MauvilleCity_Text_WallyWillYouBattleMe:
@@ -535,14 +537,14 @@ MauvilleCity_Text_UncleNoNeedToBeDown:
 	.string "down on yourself.\p"
 	.string "Why, what's keeping you from becoming\n"
 	.string "stronger and stronger?\p"
-	.string "Come on, let's go home.\n"
+	.string "Come on, let's go home for now.\n"
 	.string "Everyone's waiting for you.$"
 
 MauvilleCity_Text_UncleVisitUsSometime:
 	.string "UNCLE: {PLAYER}{KUN}, it just dawned on me\n"
 	.string "that you must be the TRAINER who kept\l"
-	.string "an eye out for WALLY when he caught\l"
-	.string "his POKéMON.\p"
+	.string "an eye out for WALLY when he started\l"
+	.string "his Gym Challenge.\p"
 	.string "Why don't you visit us in VERDANTURF\n"
 	.string "sometime?\l"
 	.string "I'm sure WALLY would enjoy it.$"
