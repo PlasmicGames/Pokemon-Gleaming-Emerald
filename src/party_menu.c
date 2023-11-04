@@ -7019,6 +7019,7 @@ static const u8 sText_MintDone[] = _("{STR_VAR_1}'s nature became\n{STR_VAR_2}!{
 static void Task_Mints(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
+    u32 monPersValue;
     
     switch (tState)
     {
@@ -7082,8 +7083,8 @@ static void Task_Mints(u8 taskId)
             tState++;
         break;
     case 5:
-        SetMonData(&gPlayerParty[tMonId], MON_DATA_HIDDEN_NATURE, &tNewNature);
-        CalculateMonStats(&gPlayerParty[tMonId]);
+        //SetMonData(&gPlayerParty[tMonId], MON_DATA_HIDDEN_NATURE, &tNewNature);
+        //CalculateMonStats(&gPlayerParty[tMonId]);
         
         RemoveBagItem(gSpecialVar_ItemId, 1);
         gTasks[taskId].func = Task_ClosePartyMenu;
@@ -7098,7 +7099,7 @@ void ItemUseCB_Mints(u8 taskId, TaskFunc task)
     tState = 0;
     tMonId = gPartyMenu.slotId;
     tSpecies = GetMonData(&gPlayerParty[tMonId], MON_DATA_SPECIES, NULL);
-    tCurrNature = GetNature(&gPlayerParty[tMonId], TRUE);
+    tCurrNature = GetNature(&gPlayerParty[tMonId]);
     tNewNature = ItemId_GetSecondaryId(gSpecialVar_ItemId);
     SetWordTaskArg(taskId, tOldFunc, (uintptr_t)(gTasks[taskId].func));
     gTasks[taskId].func = Task_Mints;

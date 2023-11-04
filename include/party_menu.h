@@ -66,6 +66,7 @@ void ItemUseCB_SacredAsh(u8 taskId, TaskFunc task);
 void ItemUseCB_EvolutionStone(u8 taskId, TaskFunc task);
 void ItemUseCB_FormChange(u8 taskId, TaskFunc task);
 void ItemUseCB_FormChange_ConsumedOnUse(u8 taskId, TaskFunc task);
+void ItemUseCB_Mints(u8 taskId, TaskFunc task);
 const u8* GetItemEffect(u16 item);
 u8 GetItemEffectType(u16 item);
 void CB2_PartyMenuFromStartMenu(void);
@@ -98,6 +99,5 @@ void BufferMoveDeleterNicknameAndMove(void);
 void GetNumMovesSelectedMonHas(void);
 void MoveDeleterChooseMoveToForget(void);
 void CB2_ReturnToPartyMenuFromSummaryScreen(void);
-void ItemUseCB_Mints(u8 taskId, TaskFunc task);
 
 #endif // GUARD_PARTY_MENU_H

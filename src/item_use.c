@@ -1356,5 +1356,4 @@ void ItemUseOutOfBattle_Mints(u8 taskId)
     SetUpItemUseCallback(taskId);
 }
 
-
 #undef tUsingRegisteredKeyItem
