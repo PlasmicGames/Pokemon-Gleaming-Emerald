@@ -3288,8 +3288,8 @@ static const u8 sTM51Desc[] = _(
 
 static const u8 sTM52Desc[] = _( 
     "The user attacks at\n"
-    "full power. May lower\n"
-    "foe's Sp. Def.");
+    "full power. May\n"
+    "lower foe's Sp. Def.");
 
 static const u8 sTM53Desc[] = _( 
     "Draws power from\n"
@@ -3299,235 +3299,235 @@ static const u8 sTM53Desc[] = _(
 static const u8 sTM54Desc[] = _( 
     "An attack that\n"
     "that leaves the foe\n"
-    "At 1 hp.");
+    "at 1 hp.");
 
 static const u8 sTM55Desc[] = _( // Todo
-    "Shoots boiling water\n"
+    "Shoots hot water\n"
     "at its target. May\n"
-    "leave the foe burnt.");
+    "burn the foe.");
 
 static const u8 sTM56Desc[] = _( // Todo
     "Flings a held item\n"
-    "at a foe to attack.\n"
-    "Power depends on item.");
+    "at a foe. Item\n"
+    "determines power.");
 
 static const u8 sTM57Desc[] = _( // Todo
-    "Attacks with a surge\n"
+    "Attacks with surge\n"
     "of electricity. May\n"
-    "raise user's Sp. Atk.");
+    "raise Sp. Atk.");
 
 static const u8 sTM58Desc[] = _( // Todo
-    "Hurls mud at the foe.\n"
-    "It also reduces the\n"
+    "Hurls mud at a foe.\n"
+    "Also reduces the\n"
     "foe's Speed");
 
 static const u8 sTM59Desc[] = _( // Todo
     "An energy-draining\n"
-    "punch. User is healed\n"
+    "punch. User heals\n"
     "for half the damage.");
 
 static const u8 sTM60Desc[] = _( // Todo
-    "A slash that may leave\n"
-    "the foe poisoned. Has\n"
-    "a high critical-hit ratio");
+    "A slash that can\n"
+    "poison. Has a high\n"
+    "crit ratio");
 
 static const u8 sTM61Desc[] = _( // Todo
-    "Inflicts a burn on the\n"
-    "attack, but sharply\n"
-    "lowers Sp. Atk.");
+    "Inflicts a burn on\n"
+    "the foe with an\n"
+    "intense fire");
 
 static const u8 sTM62Desc[] = _( // Todo
-    "Nimbly strikes the foe.\n"
-    "Does massive damage if\n"
+    "Nimbly strikes foe.\n"
+    "Does high damage if\n"
     "the user has no item");
 
 static const u8 sTM63Desc[] = _( // Todo
-    "Tears at the foe with\n"
-    "psychic blades. Has a\n"
-    "high critical-hit ratio");
+    "Tears a foe with\n"
+    "psychic blades. Has\n"
+    "a high crit ratio");
 
 static const u8 sTM64Desc[] = _( // Todo
-    "Inflicts severe damage\n"
+    "Does major damage\n"
     "but makes the user\n"
     "faint.");
 
 static const u8 sTM65Desc[] = _( // Todo
-    "Slashes with a sharp\n"
-    "shadowy claw. Has a\n"
-    "high critical-hit ratio");
+    "Slash with a sharp\n"
+    "shadowy claw. Has\n"
+    "a high crit ratio");
 
 static const u8 sTM66Desc[] = _( // Todo
     "Attacks with stored\n"
-    "power. deals more damage\n"
-    "if it attacks after foe");
+    "power. deals more\n"
+    "damage moving 2nd");
 
 static const u8 sTM67Desc[] = _( // Todo
-    "Gets revenge for an\n"
-    "ally. deals more damage\n"
-    "if used after an ally faints");
+    "Gets vengeance,\n"
+    "dealing more damage\n"
+    "if an ally faints");
 
 static const u8 sTM68Desc[] = _( // Todo
-    "Charges at full power.\n"
-    "User must rest on the\n"
+    "Charge at full power\n"
+    "but the user rests\n"
     "next turn.");
 
 static const u8 sTM69Desc[] = _( // Todo
-    "Polishes body to lower\n"
-    "drag. Sharply raises\n"
+    "Polishes body to\n"
+    "sharply raise the\n"
     "user's Speed.");
 
 static const u8 sTM70Desc[] = _( // Todo
-    "Drenches foe in a toxic\n"
-    "liquid. Damage is doubled\n"
-    "if the foe is poisoned.");
+    "Drenches foe in\n"
+    "venom. Doubles\n"
+    "damage if poisoned.");
 
 static const u8 sTM71Desc[] = _( // Todo
-    "Stabs the foe with a\n"
-    "sharp stone. Has a high\n"
-    "critical-hit ratio.");
+    "Stabs with a sharp\n"
+    "stone. Has a high\n"
+    "crit ratio.");
 
 static const u8 sTM72Desc[] = _( // Todo
-    "Attacks, then the user\n"
-    "rushes back and swaps\n"
-    "with another Pokemon.");
+    "Attacks then user\n"
+    "swaps with\n"
+    "another Pokemon.");
 
 static const u8 sTM73Desc[] = _( // Todo
-    "A weak electrical shock\n"
-    "that is sure to cause\n"
-    "paralysis if it hits.");
+    "A weak shock\n"
+    "that will cause\n"
+    "paralysis on hit.");
 
 static const u8 sTM74Desc[] = _( // Todo
-    "Spins at high speeds.\n"
-    "The slower the user, the\n"
-    "greater the damage");
+    "Spins rapidly.\n"
+    "Slower the user,\n"
+    "the more damage");
 
 static const u8 sTM75Desc[] = _( // Todo
-    "A fighting dance that\n"
-    "sharply raises the user's\n"
-    "Attack.");
+    "A fighting dance,\n"
+    "sharply raises\n"
+    "user's Attack.");
 
 static const u8 sTM76Desc[] = _( // Todo
-    "Struggles against the\n"
-    "target. Lowers the foe's\n"
+    "While struggling,\n"
+    "lowers the foe's\n"
     "Sp. Atk.");
 
 static const u8 sTM77Desc[] = _( // Todo
-    "User hypnotizes itself\n"
-    "into copying the foe's\n"
+    "User hypnotizes\n"
+    "into copying foe's\n"
     "stat changes.");
 
 static const u8 sTM78Desc[] = _( // Todo
-    "Stomps down on the ground\n"
-    "which lowers the Speed\n"
-    "of all foes hit.");
+    "Stomp the ground\n"
+    "lowering Speed of\n"
+    "all foes hit.");
 
 static const u8 sTM79Desc[] = _( // Todo
-    "Blows cold breath on the\n"
-    "target. This attack always\n"
-    "results in a critical hit.");
+    "Blows cold breath.\n"
+    "This attack always\n"
+    "results in a crit.");
 
 static const u8 sTM80Desc[] = _( // Todo
-    "Large boulders are hurled\n"
-    "at the foe. It may cause\n"
+    "Hurles boulders at\n"
+    "the foe. May cause\n"
     "the foe to flinch.");
 
 static const u8 sTM81Desc[] = _( // Todo
-    "Slashes with crossed\n"
-    "claws. Has an increased\n"
-    "critical-hit ratio.");
+    "Slash with crossed\n"
+    "claws. Has a high\n"
+    "crit ratio.");
 
 static const u8 sTM82Desc[] = _( // Todo
-    "Knocks away the target\n"
-    "and drags out another\n"
-    "foe. Ends wild battles.");
+    "Knocks away target\n"
+    "and drags out a\n"
+    "new foe");
 
 static const u8 sTM83Desc[] = _( // Todo
-    "Infests target for 4\n"
-    "to 5 turns. Foe cannot\n"
-    "flee during this time.");
+    "Infests a target.\n"
+    "Foe cannot flee\n"
+    "for the duration.");
 
 static const u8 sTM84Desc[] = _( // Todo
-    "Jabs with a poisonous\n"
-    "limb. It may also leave\n"
+    "Jabs with a toxic\n"
+    "limb. May leave\n"
     "the foe poisoned.");
 
 static const u8 sTM85Desc[] = _( // Todo
-    "Absorbs the dreams of\n"
-    "a sleeping foe. Heals\n"
-    "half of the damage.");
+    "Absorbs the dreams\n"
+    "of sleeping foe\n"
+    "while healing user.");
 
 static const u8 sTM86Desc[] = _( // Todo
-    "Snares a foe with grass.\n"
-    "The heavier the foe, the\n"
-    "more damage they take.");
+    "Snares with grass.\n"
+    "Heavier foes take\n"
+    "more damage.");
 
 static const u8 sTM87Desc[] = _( // Todo
-    "Enrages the foe, sharply\n"
-    "raising the foe's Attack\n"
-    "while also confusing them.");
+    "Enrages the foe,\n"
+    "raising foe's Attack\n"
+    "while confusing them.");
 
 static const u8 sTM88Desc[] = _( // Todo
-    "Uses a random available\n"
-    "move while the user is\n"
-    "asleep.");
+    "Uses a random\n"
+    "move while the user\n"
+    "is asleep.");
 
 static const u8 sTM89Desc[] = _( // Todo
-    "Attacks, then the user\n"
-    "rushes back and swaps\n"
-    "with another Pokemon.");
+    "Attacks, then swaps\n"
+    "with another\n"
+    "Pokemon.");
 
 static const u8 sTM90Desc[] = _( // Todo
-    "Creates a decoy using\n"
-    "1/4th of the user's own\n"
-    "maximum HP.");
+    "Creates a decoy with\n"
+    "1/4th of the user's\n"
+    "own maximum HP.");
 
 static const u8 sTM91Desc[] = _( // Todo
-    "Gathers light energy\n"
-    "and releases it. May\n"
+    "Gather light energy\n"
+    "and release it. May\n"
     "lower foe's Sp. Def.");
 
 static const u8 sTM92Desc[] = _( // Todo
-    "Creates a bizarre area\n"
-    "in which slower pokemon\n"
-    "move first for 5 turns.");
+    "Creates a bizarre\n"
+    "area where slower\n"
+    "Pokemon move first.");
 
 static const u8 sTM93Desc[] = _( // Todo
-    "User shrouds itself in\n"
-    "electricity and charges.\n"
-    "May leave foe paralyzed.");
+    "User rushes at foe\n"
+    "with electric energy\n"
+    "May cause paralysis.");
 
 static const u8 sTM94Desc[] = _( // Todo
     "Steals a foe's energy\n"
-    "with a kiss. Heals for\n"
+    "with a kiss. Heals\n"
     "half of the damage.");
 
 static const u8 sTM95Desc[] = _( // Todo
-    "Attacks by breathing a\n"
-    "special fire. Also lowers\n"
+    "Attacks by breathing\n"
+    "special fire. Lowers\n"
     "the foe's Sp. Atk.");
 
 static const u8 sTM96Desc[] = _( // Todo
     "Yells as if ranting\n"
-    "at a foe. Also lowers\n"
+    "at a foe. Lowers\n"
     "the foe's Sp. Atk.");
 
 static const u8 sTM97Desc[] = _( // Todo
-    "Attacks with blades of\n"
-    "air. May also cause the\n"
+    "Attacks with air\n"
+    "blades. May cause\n"
     "foe to flinch.");
 
 static const u8 sTM98Desc[] = _( // Todo
-    "Releases an aura of ill\n"
-    "intent. May also cause the\n"
+    "Releases aura of ill\n"
+    "intent. May cause\n"
     "foe to flinch.");
 
 static const u8 sTM99Desc[] = _( // Todo
     "Vanishes and strikes\n"
-    "on the next turn. Move\n"
-    "hits through protection.");
+    "on the next turn.\n"
+    "Cannot be blocked.");
 
 static const u8 sTM100Desc[] = _( // Todo
-    "Attacks the foe with\n"
+    "Attacks foe with\n"
     "a bright flash of\n"
     "powerful light.");
 

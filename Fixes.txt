@@ -1,0 +1,7 @@
+Route 110 May visuals are bugged
+
+Remake Mauville Gym Puzzle
+
+Fix up how Altering Cave works
+
+Fix Nature Mints
