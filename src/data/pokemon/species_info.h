@@ -2149,12 +2149,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_PRIMEAPE] =
     {
-        .baseHP        = 65,
+        .baseHP        = 70,
         .baseAttack    = 105,
-        .baseDefense   = 60,
+        .baseDefense   = 70,
         .baseSpeed     = 95,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 70,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 80,
         .types = { TYPE_FIGHTING, TYPE_FIGHTING },
         .catchRate = 75,
         .expYield = 159,
@@ -10194,10 +10194,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_LUXRAY] =
     {
         .baseHP        = 80,
-        .baseAttack    = 122,
-        .baseDefense   = 84,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 84,
+        .baseAttack    = 12,
+        .baseDefense   = 79,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 85,
         .baseSpDefense = 79,
         .types = { TYPE_ELECTRIC, TYPE_DARK},
         .catchRate = 45,
