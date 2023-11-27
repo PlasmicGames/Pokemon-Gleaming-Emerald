@@ -1840,6 +1840,10 @@ static const u8 sMagmaStormDescription[] = _(
     "Traps the foe in a vortex\n"
     "of fire for "BINDING_TURNS" turns.");
 
+static const u8 sCrushGripDescription[] = (
+    "Traps and crushes the foe\n"
+    "for "BINDING_TURNS" turns.");
+
 static const u8 sDarkVoidDescription[] = _(
     "Drags the foe into total\n"
     "darkness, inducing Sleep.");
@@ -3738,7 +3742,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_ROAR_OF_TIME - 1] = sRoarOfTimeDescription,
     [MOVE_SPACIAL_REND - 1] = sSpacialRendDescription,
     [MOVE_LUNAR_DANCE - 1] = sHealingWishDescription,
-    [MOVE_CRUSH_GRIP - 1] = sWringOutDescription,
+    [MOVE_CRUSH_GRIP - 1] = sCrushGripDescription,
     [MOVE_MAGMA_STORM - 1] = sMagmaStormDescription,
     [MOVE_DARK_VOID - 1] = sDarkVoidDescription,
     [MOVE_SEED_FLARE - 1] = sSeedFlareDescription,
