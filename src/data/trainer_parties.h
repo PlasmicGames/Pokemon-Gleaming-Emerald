@@ -594,14 +594,18 @@ static const struct TrainerMon sParty_Dusty5[] = {
 
 static const struct TrainerMon sParty_GabbyAndTy1[] = {
     {
-    .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
-    .lvl = 17,
-    .species = SPECIES_MAGNEMITE,
+    .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
+    .lvl = 25,
+    .species = SPECIES_ROTOM,
+    .heldItem = ITEM_SHUCA_BERRY,
+    .moves = {MOVE_THUNDER_WAVE, MOVE_ELECTRO_BALL, MOVE_CONFUSE_RAY, MOVE_REFLECT},
     },
     {
-    .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
-    .lvl = 17,
-    .species = SPECIES_WHISMUR,
+    .iv = TRAINER_PARTY_IVS(20, 20, 20, 20, 20, 20),
+    .lvl = 25,
+    .species = SPECIES_LOUDRED,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_STOMP, MOVE_BITE, MOVE_REST, MOVE_SLEEP_TALK},
     }
 };
 
@@ -2591,8 +2595,16 @@ static const struct TrainerMon sParty_Autumn[] = {
 
 static const struct TrainerMon sParty_Travis[] = {
     {
-    .lvl = 18,
+    .iv = TRAINER_PARTY_IVS(20, 20, 20, 20, 20, 20),
+    .lvl = 24,
     .species = SPECIES_SANDSHREW,
+    .moves = {MOVE_BULLDOZE, MOVE_FURY_SWIPES, MOVE_DEFENSE_CURL, MOVE_ROLLOUT},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(20, 20, 20, 20, 20, 20),
+    .lvl = 24,
+    .species = SPECIES_TENTACOOL,
+    .moves = {MOVE_BUBBLE_BEAM, MOVE_TOXIC, MOVE_PROTECT, MOVE_ACID},
     }
 };
 
@@ -3421,7 +3433,7 @@ static const struct TrainerMon sParty_Wattson1[] = {
     .ability = ABILITY_LEVITATE,
     .heldItem = ITEM_FOCUS_SASH,
     .nature = TRAINER_PARTY_NATURE(NATURE_TIMID),
-    .moves = {MOVE_TAIL_GLOW, MOVE_THUNDER, MOVE_STRUGGLE_BUG, MOVE_VOLT_SWITCH}
+    .moves = {MOVE_TAIL_GLOW, MOVE_THUNDERBOLT, MOVE_STRUGGLE_BUG, MOVE_VOLT_SWITCH}
     },
     {
     .lvl = 24,
@@ -3457,7 +3469,7 @@ static const struct TrainerMon sParty_Wattson1[] = {
     .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 90, 0, 90),
     .species = SPECIES_MANECTRIC,
-    .ability = ABILITY_STATIC,
+    .ability = ABILITY_LIGHTNING_ROD,
     .heldItem = ITEM_SITRUS_BERRY,
     .nature = TRAINER_PARTY_NATURE(NATURE_TIMID),
     .moves = {MOVE_THUNDER, MOVE_MUD_SLAP, MOVE_SWIFT, MOVE_VOLT_SWITCH}
@@ -6128,12 +6140,18 @@ static const struct TrainerMon sParty_Cedric[] = {
 
 static const struct TrainerMon sParty_Irene[] = {
     {
-    .lvl = 17,
-    .species = SPECIES_SHROOMISH,
+    .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
+    .lvl = 24,
+    .species = SPECIES_TRAPINCH,
+    .ability = ABILITY_ARENA_TRAP,
+    .moves = {MOVE_BITE, MOVE_SAND_TOMB, MOVE_BULLDOZE, MOVE_GIGA_DRAIN},
     },
     {
-    .lvl = 17,
-    .species = SPECIES_MARILL,
+    .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
+    .lvl = 24,
+    .species = SPECIES_GLOOM,
+    .ability = ABILITY_EFFECT_SPORE,
+    .moves = {MOVE_GIGA_DRAIN, MOVE_GROWTH, MOVE_SLUDGE_BOMB, MOVE_SLEEP_POWDER},
     }
 };
 

@@ -44,11 +44,9 @@ To Add:
 - Item Bag Sorting
 - View Pokemon Happiness and Egg Hatch steps
 - Giga Impact/Hyper Beam won't recharge on a KO
-- Ability Capsules to swap abilities
 
 
 Possible Adds:
 - Pokevial (full party healing item that has set charges, can be restored at a center)
-- Mega Evolutions
 - Slightly expanded regional dex
 - Hidden Cheat Codes

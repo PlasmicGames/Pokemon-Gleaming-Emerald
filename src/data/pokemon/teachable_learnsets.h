@@ -20710,7 +20710,6 @@ static const u16 sRotomTeachableLearnset[] = {
     MOVE_THIEF,
     MOVE_THUNDER,
     MOVE_THUNDERBOLT,
-    MOVE_TOXIC,
     MOVE_DREAM_EATER,
     MOVE_ENDURE,
     MOVE_MUD_SLAP,
