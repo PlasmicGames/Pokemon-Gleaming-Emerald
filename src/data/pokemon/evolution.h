@@ -255,8 +255,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                                        {EVO_ITEM, ITEM_REAPER_CLOTH, SPECIES_DUSKNOIR}},
     [SPECIES_ROSELIA]               = {{EVO_ITEM, ITEM_SHINY_STONE, SPECIES_ROSERADE}},
 #endif
-    [SPECIES_SLAKOTH]               = {{EVO_LEVEL, 18, SPECIES_VIGOROTH}},
-    [SPECIES_VIGOROTH]              = {{EVO_LEVEL, 36, SPECIES_SLAKING}},
+    [SPECIES_SLAKOTH]               = {{EVO_LEVEL, 20, SPECIES_VIGOROTH}},
+    [SPECIES_VIGOROTH]              = {{EVO_LEVEL, 45, SPECIES_SLAKING}},
     [SPECIES_GULPIN]                = {{EVO_LEVEL, 26, SPECIES_SWALOT}},
     [SPECIES_WHISMUR]               = {{EVO_LEVEL, 20, SPECIES_LOUDRED}},
     [SPECIES_LOUDRED]               = {{EVO_LEVEL, 42, SPECIES_EXPLOUD}},

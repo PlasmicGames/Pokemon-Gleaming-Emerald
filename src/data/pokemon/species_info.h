@@ -7517,10 +7517,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_SLAKING] =
     {
-        .baseHP        = 150,
-        .baseAttack    = 160,
+        .baseHP        = 140,
+        .baseAttack    = 140,
         .baseDefense   = 100,
-        .baseSpeed     = 100,
+        .baseSpeed     = 80,
         .baseSpAttack  = 95,
         .baseSpDefense = 65,
         .types = { TYPE_NORMAL, TYPE_NORMAL },
