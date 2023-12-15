@@ -81,7 +81,7 @@ struct DisableStruct
     u8 battlerPreventingEscape;
     u8 battlerWithSureHit;
     u8 isFirstTurn;
-    u8 truantCounter:1;
+    u8 truantCounter:2;
     u8 truantSwitchInHack:1;
     u8 mimickedMoves:4;
     u8 rechargeTimer;

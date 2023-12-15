@@ -459,7 +459,7 @@ static bool32 AI_ShouldSwitchIfBadMoves(u32 battler, bool32 doubleBattle)
         // Or is using a double turn semi invulnerable move(such as Fly) and is faster.
         if (GetBattlerAbility(battler) == ABILITY_TRUANT
             && IsTruantMonVulnerable(battler, gBattlerTarget)
-            && gDisableStructs[battler].truantCounter
+            && gDisableStructs[battler].truantCounter >= 2
             && gBattleMons[battler].hp >= gBattleMons[battler].maxHP / 2
             && AI_SwitchMonIfSuitable(battler))
         {

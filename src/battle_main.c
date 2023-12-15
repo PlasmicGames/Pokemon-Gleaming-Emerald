@@ -5071,7 +5071,7 @@ static bool32 TryDoMoveEffectsBeforeMoves(void)
         {
             if (!(gBattleStruct->focusPunchBattlers & gBitTable[battlers[i]])
                 && !(gBattleMons[battlers[i]].status1 & STATUS1_SLEEP)
-                && !(gDisableStructs[battlers[i]].truantCounter)
+                && !(gDisableStructs[battlers[i]].truantCounter >= 2)
                 && !(gProtectStructs[battlers[i]].noValidMoves))
             {
                 gBattleStruct->focusPunchBattlers |= gBitTable[battlers[i]];
@@ -5130,7 +5130,7 @@ static void CheckQuickClaw_CustapBerryActivation(void)
              && gChosenMoveByBattler[battler] != MOVE_FOCUS_PUNCH   // quick claw message doesn't need to activate here
              && (gProtectStructs[battler].usedCustapBerry || gProtectStructs[battler].quickDraw)
              && !(gBattleMons[battler].status1 & STATUS1_SLEEP)
-             && !(gDisableStructs[gBattlerAttacker].truantCounter)
+             && !(gDisableStructs[gBattlerAttacker].truantCounter >= 2)
              && !(gProtectStructs[battler].noValidMoves))
             {
                 if (gProtectStructs[battler].usedCustapBerry)

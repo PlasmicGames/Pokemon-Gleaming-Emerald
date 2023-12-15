@@ -7027,7 +7027,7 @@ static void Cmd_switchineffects(void)
         if (GetBattlerAbility(battler) == ABILITY_TRUANT
             && gCurrentActionFuncId != B_ACTION_USE_MOVE
             && !gDisableStructs[battler].truantSwitchInHack)
-            gDisableStructs[battler].truantCounter = 1;
+            gDisableStructs[battler].truantCounter = 2;
 
         gDisableStructs[battler].truantSwitchInHack = 0;
 
@@ -13426,7 +13426,7 @@ static void Cmd_jumpifnopursuitswitchdmg(void)
         && gBattlerAttacker == *(gBattleStruct->moveTarget + gBattlerTarget)
         && !(gBattleMons[gBattlerTarget].status1 & (STATUS1_SLEEP | STATUS1_FREEZE))
         && gBattleMons[gBattlerAttacker].hp
-        && !gDisableStructs[gBattlerTarget].truantCounter
+        && !(gDisableStructs[gBattlerTarget].truantCounter >= 2)
         && gBattleMoves[gChosenMoveByBattler[gBattlerTarget]].effect == EFFECT_PURSUIT)
     {
         s32 i;

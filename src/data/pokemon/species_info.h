@@ -10542,8 +10542,6 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_GASTRODON] = GASTRODON_SPECIES_INFO(BODY_COLOR_PURPLE),
 
-`
-
     [SPECIES_DRIFLOON] =
     {
         .baseHP        = 90,
